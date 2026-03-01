@@ -12,4 +12,5 @@ public class UsuarioInadimplenteException extends Exception {
         super("Usuário '" + nome + "' (ID: " + id + ") é inadimplente e não pode realizar empréstimos.");
 
     }
+    
 }
