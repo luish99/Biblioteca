@@ -77,7 +77,7 @@ public class Livro {
     public boolean isDisponivel(){
         return quantidadeDisponivelEstoque > 0;
     }
-
+    
 
 }
 
