@@ -77,7 +77,11 @@ public class Livro {
     public boolean isDisponivel(){
         return quantidadeDisponivelEstoque > 0;
     }
-    
+    @Override
+public String toString() {
+    return "📖 " + titulo + " - " + autor + " (" + anoPublicacao + ") | ISBN: " + isbn + 
+           " | Disponível: " + quantidadeDisponivelEstoque + "/" + quantidadeTotalEstoque;
+}
 
 }
 
