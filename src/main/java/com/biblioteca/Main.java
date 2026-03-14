@@ -118,12 +118,11 @@ public class Main {
                         System.out.println("\n=== LIVROS DISPONÍVEIS ===");
                         for (Livro l : biblioteca.getLivroRepo().listarTodos()) {
                             if (l.isDisponivel()) {
-                                System.out.println("📖 " + l.getTitulo() + " - " + 
-                                                   l.getAutor() + " (" + 
-                                                   l.getQuantidadeDisponivelEstoque() + " disponíveis)");
-                            }
+                                System.out.println(l);  // ← USA O TOSTRING!
                         }
-                        break;
+                        }
+                    
+                    break;
                         
                     case 8:
                         System.out.println("\n=== EMPRÉSTIMOS ATIVOS ===");
